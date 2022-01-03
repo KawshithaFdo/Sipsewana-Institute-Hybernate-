@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="DetailContext" prefHeight="524.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.student_reg_courses">
+    <children>
+        <Label layoutX="202.0" layoutY="5.0" text="Student Detail Form">
+            <font>
+                <Font name="System Bold" size="31.0" />
+            </font>
+        </Label>
+        <Separator layoutX="14.0" layoutY="53.0" prefHeight="6.0" prefWidth="620.0" />
+        <JFXTextField fx:id="txtcourseid" focusColor="BLACK" labelFloat="true" layoutX="44.0" layoutY="145.0" onAction="#openCourseDetails" prefHeight="26.0" prefWidth="214.0" promptText="Course ID" unFocusColor="WHITE">
+            <font>
+                <Font name="Ubuntu Bold" size="16.0" />
+            </font>
+        </JFXTextField>
+        <JFXTextField fx:id="txtName" focusColor="BLACK" labelFloat="true" layoutX="353.0" layoutY="83.0" prefHeight="26.0" prefWidth="214.0" promptText="Name" unFocusColor="WHITE">
+            <font>
+                <Font name="Ubuntu Bold" size="16.0" />
+            </font>
+        </JFXTextField>
+        <JFXTextField fx:id="txtSt_Id" focusColor="BLACK" labelFloat="true" layoutX="44.0" layoutY="83.0" onAction="#openStudentDetails" prefHeight="26.0" prefWidth="214.0" promptText="St_ID" unFocusColor="WHITE">
+            <font>
+                <Font name="Ubuntu Bold" size="16.0" />
+            </font>
+        </JFXTextField>
+        <JFXTextField fx:id="txtC_Name" focusColor="BLACK" labelFloat="true" layoutX="353.0" layoutY="145.0" prefHeight="26.0" prefWidth="214.0" promptText="C_name" unFocusColor="WHITE">
+            <font>
+                <Font name="Ubuntu Bold" size="16.0" />
+            </font>
+        </JFXTextField>
+        <JFXButton buttonType="RAISED" layoutX="474.0" layoutY="202.0" onAction="#btnSaveOnAction" prefHeight="31.0" prefWidth="148.0" style="-fx-background-color: #82ccdd; -fx-background-radius: 50;" text="REGISTER" textFill="WHITE">
+            <font>
+                <Font name="Ubuntu Bold" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <TableView fx:id="tbldetails" layoutX="16.0" layoutY="325.0" prefHeight="185.0" prefWidth="620.0">
+            <columns>
+                <TableColumn fx:id="colSt_Id" prefWidth="127.0" text="St_ID" />
+                <TableColumn fx:id="colstName" prefWidth="229.0" text="St_Name" />
+                <TableColumn fx:id="colC_Id" prefWidth="161.0" text="C_ID" />
+                <TableColumn fx:id="colfee" prefWidth="101.0" text="Fee" />
+            </columns>
+        </TableView>
+        <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="13.0" onAction="#btnBackOnAction" prefHeight="31.0" prefWidth="90.0" style="-fx-background-color: #1e3799;" text="BACK" textFill="WHITE">
+            <font>
+                <Font name="Ubuntu Bold" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+      <JFXTextField fx:id="txtFee" focusColor="BLACK" labelFloat="true" layoutX="44.0" layoutY="202.0" prefHeight="26.0" prefWidth="214.0" promptText="Fee" unFocusColor="WHITE">
+         <font>
+            <Font name="Ubuntu Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="474.0" layoutY="262.0" onAction="#btnSearchOnAction" prefHeight="31.0" prefWidth="148.0" style="-fx-background-color: #82ccdd; -fx-background-radius: 50;" text="SEARCH" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="txt_search_St_Id" focusColor="BLACK" labelFloat="true" layoutX="180.0" layoutY="269.0" prefHeight="26.0" prefWidth="214.0" promptText="St_ID" unFocusColor="WHITE">
+         <font>
+            <Font name="Ubuntu Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <Separator layoutX="16.0" layoutY="243.0" prefHeight="6.0" prefWidth="620.0" />
+    </children>
+</AnchorPane>
