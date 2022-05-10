@@ -1,9 +1,7 @@
 package dao.Dao;
 
 import dao.Dao.Impl.CourseDaoImpl;
-import entity.Student;
 import entity.courses;
-import entity.st_Courses;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
@@ -11,7 +9,6 @@ import util.FactoryConfiguration;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class CourseDao implements CourseDaoImpl {
